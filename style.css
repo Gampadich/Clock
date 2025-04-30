@@ -1,0 +1,137 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Courier New', Courier, monospace;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    transition: 1s;
+}
+
+#display{
+    font-size: 50px;
+}
+
+.clock-container{
+    text-align: center;
+}
+
+#clock{
+    font-size: 5rem;
+    letter-spacing: 3px;
+    animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn{
+    from{
+        opacity: 0;
+        transform: scale(0.9);
+        transition: 1s;
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+        transition: 1s;
+    }
+}
+
+.stopwatch{
+    position: absolute;
+    text-decoration: none;
+    top: 20px;
+    right: 50vw;
+    color: white;
+    width: 150px;
+    height: 50px;
+    background-color: #45a049;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px black solid;
+    transition: 1s;
+}
+
+a:hover{
+    transform: scale(1.20);
+    transition: 1s;
+}
+
+a:active{
+    transform: scale(0.5);
+    transition: 1s;
+}
+
+a:focus{
+    outline: none;
+    box-shadow: 0 0 8px #4CAF50;
+}
+
+#toggleTheme{
+    background-color: #45a049;
+    width: 100px;
+    height: 50px;
+    color: white;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    transition: 1s;
+}
+
+button{
+    background-color: #45a049;
+    width: 70px;
+    height: 40px;
+    color: white;
+    transition: 1s;
+}
+
+button:hover{
+    transform: scale(1.20);
+    transition: 1s;
+}
+
+button:active{
+    transform: scale(0.5);
+    transition: 1s;
+}
+
+button:focus{
+    outline: none;
+    box-shadow: 0 0 8px #4CAF50;
+}
+
+body.dark{
+    background-color: #3a3a3a;
+    color: white;
+    transition: 1s;
+}
+
+body.dark button{
+    background-color: #575353;
+    color: white;
+    border: 1px solid #797979;
+    transition: 1s;
+}
+
+body.dark #toggleTheme{
+    background-color: #575353;
+    color: white;
+    border: 1px solid #797979;
+    transition: 1s;
+}
+
+body.dark a{
+    background-color: #575353;
+    color: white;
+    border: 1px solid #797979;
+    transition: 1s;
+}
+
+.margin{
+    margin-left: 55px;
+}
