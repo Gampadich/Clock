@@ -50,9 +50,6 @@ body{
     height: 50px;
     background-color: #45a049;
     color: white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     border: 2px black solid;
     transition: 1s;
 }
